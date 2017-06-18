@@ -34,6 +34,9 @@ def preprocessamento(txt):
 	if texto[:3] == 'rt ':
 		texto = texto[3:]
 
+	#remove a string 'mchef' para normalizar os nomes dos participantes
+	texto = texto.replace('mchef','')
+
 	#remove stopwords
 	texto =  ' '.join([word for word in texto.split() if word not in (stopwords.words('portuguese'))])
 
