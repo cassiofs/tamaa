@@ -1,7 +1,7 @@
 @relation resultado
 
 @attribute tweet string
-@attribute relevante {N,S}
+@attribute relevante {S,N}
 
 @data
 
